@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\SuratTugas\Permohonan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,4 +26,5 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('/permohonan',Permohonan::class)->name('permohonan');
 });
